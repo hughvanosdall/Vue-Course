@@ -13,6 +13,36 @@ const app = Vue.createApp({
       this.message = this.currentUserInput;
     },
   },
+  beforeCreate() {
+    console.log('beforecreate');
+  },
 });
 
 app.mount('#app');
+
+//................................................................................................
+
+// let message = 'Hello!';
+
+// let longMessage = message + 'World!'
+
+// message = 'Hello!!!'
+
+// const data = {
+//     message: 'Hello!'
+// };
+
+// const handler = {
+//   set (target, key, value) {
+//     if(key === 'message'){
+//       target.longMessage = value + ' World!'
+//     }
+//     target.message = value;
+//   }
+// };
+
+// const proxy = new Proxy(data, handler);
+
+// proxy.message = 'hello!!'
+
+// console.log(proxy.longMessage)
